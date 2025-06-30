@@ -20,7 +20,8 @@ export default function Index() {
 
         try {
             const response = await axios.post(
-                "/api/login",
+                "http://localhost:9090/api/login",
+                // "/api/login",    //This is from prev
                 { username, password },
                 { withCredentials: true }
                 );
